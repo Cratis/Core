@@ -1,0 +1,295 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5.1": {
+      "Machine.Specifications/0.9.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Machine.Specifications.Clr4.dll": {},
+          "lib/net45/Machine.Specifications.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Machine.Specifications.Clr4.dll": {},
+          "lib/net45/Machine.Specifications.dll": {}
+        }
+      },
+      "Machine.Specifications.Runner.Console/0.10.0-unstable0005": {
+        "type": "package"
+      },
+      "Machine.Specifications.Runner.TDNet/0.9.0": {
+        "type": "package"
+      },
+      "Machine.Specifications.Should/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Machine.Specifications": "[0.9.0, 1.0.0)"
+        },
+        "compile": {
+          "lib/net45/Machine.Specifications.Should.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Machine.Specifications.Should.dll": {}
+        }
+      },
+      "Source/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "System.Reflection": "4.1.0-beta-23516"
+        }
+      },
+      "System.Reflection/4.1.0-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x86": {
+      "Machine.Specifications/0.9.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Machine.Specifications.Clr4.dll": {},
+          "lib/net45/Machine.Specifications.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Machine.Specifications.Clr4.dll": {},
+          "lib/net45/Machine.Specifications.dll": {}
+        }
+      },
+      "Machine.Specifications.Runner.Console/0.10.0-unstable0005": {
+        "type": "package"
+      },
+      "Machine.Specifications.Runner.TDNet/0.9.0": {
+        "type": "package"
+      },
+      "Machine.Specifications.Should/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Machine.Specifications": "[0.9.0, 1.0.0)"
+        },
+        "compile": {
+          "lib/net45/Machine.Specifications.Should.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Machine.Specifications.Should.dll": {}
+        }
+      },
+      "Source/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "System.Reflection": "4.1.0-beta-23516"
+        }
+      },
+      "System.Reflection/4.1.0-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x64": {
+      "Machine.Specifications/0.9.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Machine.Specifications.Clr4.dll": {},
+          "lib/net45/Machine.Specifications.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Machine.Specifications.Clr4.dll": {},
+          "lib/net45/Machine.Specifications.dll": {}
+        }
+      },
+      "Machine.Specifications.Runner.Console/0.10.0-unstable0005": {
+        "type": "package"
+      },
+      "Machine.Specifications.Runner.TDNet/0.9.0": {
+        "type": "package"
+      },
+      "Machine.Specifications.Should/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Machine.Specifications": "[0.9.0, 1.0.0)"
+        },
+        "compile": {
+          "lib/net45/Machine.Specifications.Should.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Machine.Specifications.Should.dll": {}
+        }
+      },
+      "Source/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "System.Reflection": "4.1.0-beta-23516"
+        }
+      },
+      "System.Reflection/4.1.0-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Source/1.0.0": {
+      "type": "project",
+      "path": "../Source/project.json"
+    },
+    "Machine.Specifications/0.9.3": {
+      "type": "package",
+      "sha512": "b+Pc6m83O3slJWW3iTtBRBrPsF/Rdt41m+71gUUOTAdMliFwpCqIhp8R0H3xpVqMj0pUAFURxQtWCZ1PsWHOAg==",
+      "files": [
+        "lib/net20/Machine.Specifications.dll",
+        "lib/net40/Machine.Specifications.Clr4.dll",
+        "lib/net40/Machine.Specifications.dll",
+        "lib/net45/Machine.Specifications.Clr4.dll",
+        "lib/net45/Machine.Specifications.dll",
+        "Machine.Specifications.0.9.3.nupkg",
+        "Machine.Specifications.0.9.3.nupkg.sha512",
+        "Machine.Specifications.nuspec",
+        "tools/history.txt",
+        "tools/install.ps1",
+        "tools/License.txt"
+      ]
+    },
+    "Machine.Specifications.Runner.Console/0.10.0-unstable0005": {
+      "type": "package",
+      "sha512": "ViPD4bDAAvpsqb/O8iisrrw4AFWF5UZoeNvNo7RJUOUFYoVw/bbVNvh56pzoN7meMGbZntUMgE0wgP7N60qVbQ==",
+      "files": [
+        "License.txt",
+        "Machine.Specifications.Runner.Console.0.10.0-unstable0005.nupkg",
+        "Machine.Specifications.Runner.Console.0.10.0-unstable0005.nupkg.sha512",
+        "Machine.Specifications.Runner.Console.nuspec",
+        "tools/CommandLine.dll",
+        "tools/Machine.Specifications.Reporting.dll",
+        "tools/Machine.Specifications.Reporting.Templates.dll",
+        "tools/Machine.Specifications.Runner.Utility.dll",
+        "tools/mspec.exe",
+        "tools/mspec-clr4.exe",
+        "tools/mspec-clr4.exe.config",
+        "tools/mspec-x86.exe",
+        "tools/mspec-x86-clr4.exe",
+        "tools/mspec-x86-clr4.exe.config",
+        "tools/Spark.dll"
+      ]
+    },
+    "Machine.Specifications.Runner.TDNet/0.9.0": {
+      "type": "package",
+      "sha512": "ySpDaZ4WLNT5LtisvZgHiuar2JT4HX2HQcNnVokWniawhrHYZAx6oznlfifq33XTa3FVvCZHhXIe8vj3ht0tsQ==",
+      "files": [
+        "License.txt",
+        "Machine.Specifications.Runner.TDNet.0.9.0.nupkg",
+        "Machine.Specifications.Runner.TDNet.0.9.0.nupkg.sha512",
+        "Machine.Specifications.Runner.TDNet.nuspec",
+        "tools/InstallTDNetRunner.bat",
+        "tools/InstallTDNetRunnerSilent.bat",
+        "tools/Machine.Specifications.dll.tdnet",
+        "tools/Machine.Specifications.Runner.Utility.dll",
+        "tools/Machine.Specifications.TDNetRunner.dll",
+        "tools/TestDriven.Framework.dll"
+      ]
+    },
+    "Machine.Specifications.Should/0.8.0": {
+      "type": "package",
+      "sha512": "b+ATnRfmTRrlfS1Q7HbeSIakvHEe38aFt7h59FMshI//y+zweXOiOnNsRl0QxXDvg9mdtnWQ3g7qdWYBCRpvxA==",
+      "files": [
+        "lib/net20/Machine.Specifications.Should.dll",
+        "lib/net40/Machine.Specifications.Should.dll",
+        "lib/net45/Machine.Specifications.Should.dll",
+        "License.txt",
+        "Machine.Specifications.Should.0.8.0.nupkg",
+        "Machine.Specifications.Should.0.8.0.nupkg.sha512",
+        "Machine.Specifications.Should.nuspec"
+      ]
+    },
+    "System.Reflection/4.1.0-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "wfrnDfk8p2cqJQY3TTHsJRmf3cE3wa6BacncCn4dO58lVwQNNe9ASdLrLJZlMviAjx8+1fUpj6NX7leIOyaBJA==",
+      "files": [
+        "lib/DNXCore50/System.Reflection.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Reflection.dll",
+        "lib/netcore50/System.Reflection.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet5.1/de/System.Reflection.xml",
+        "ref/dotnet5.1/es/System.Reflection.xml",
+        "ref/dotnet5.1/fr/System.Reflection.xml",
+        "ref/dotnet5.1/it/System.Reflection.xml",
+        "ref/dotnet5.1/ja/System.Reflection.xml",
+        "ref/dotnet5.1/ko/System.Reflection.xml",
+        "ref/dotnet5.1/ru/System.Reflection.xml",
+        "ref/dotnet5.1/System.Reflection.dll",
+        "ref/dotnet5.1/System.Reflection.xml",
+        "ref/dotnet5.1/zh-hans/System.Reflection.xml",
+        "ref/dotnet5.1/zh-hant/System.Reflection.xml",
+        "ref/dotnet5.4/de/System.Reflection.xml",
+        "ref/dotnet5.4/es/System.Reflection.xml",
+        "ref/dotnet5.4/fr/System.Reflection.xml",
+        "ref/dotnet5.4/it/System.Reflection.xml",
+        "ref/dotnet5.4/ja/System.Reflection.xml",
+        "ref/dotnet5.4/ko/System.Reflection.xml",
+        "ref/dotnet5.4/ru/System.Reflection.xml",
+        "ref/dotnet5.4/System.Reflection.dll",
+        "ref/dotnet5.4/System.Reflection.xml",
+        "ref/dotnet5.4/zh-hans/System.Reflection.xml",
+        "ref/dotnet5.4/zh-hant/System.Reflection.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Reflection.dll",
+        "ref/netcore50/de/System.Reflection.xml",
+        "ref/netcore50/es/System.Reflection.xml",
+        "ref/netcore50/fr/System.Reflection.xml",
+        "ref/netcore50/it/System.Reflection.xml",
+        "ref/netcore50/ja/System.Reflection.xml",
+        "ref/netcore50/ko/System.Reflection.xml",
+        "ref/netcore50/ru/System.Reflection.xml",
+        "ref/netcore50/System.Reflection.dll",
+        "ref/netcore50/System.Reflection.xml",
+        "ref/netcore50/zh-hans/System.Reflection.xml",
+        "ref/netcore50/zh-hant/System.Reflection.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Reflection.dll",
+        "System.Reflection.4.1.0-beta-23516.nupkg",
+        "System.Reflection.4.1.0-beta-23516.nupkg.sha512",
+        "System.Reflection.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Machine.Specifications.Runner.Console >= 0.10.0-Unstable0005",
+      "Machine.Specifications.Runner.TDNet >= 0.9.0",
+      "Source >= 1.0.0-*"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "Machine.Specifications >= 0.9.3",
+      "Machine.Specifications.Should >= 0.8.0"
+    ]
+  }
+}

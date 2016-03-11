@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+  "description": "Cratis.Core.Specifications Class Library",
+  "authors": [ "einari" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "net451": {
+      "dependencies": {
+        "Machine.Specifications": "0.9.3",
+        "Machine.Specifications.Should": "0.8.0"
+      }
+    }
+  },
+  "dependencies": {
+    "Machine.Specifications.Runner.Console": "0.10.0-Unstable0005",
+    "Machine.Specifications.Runner.TDNet": "0.9.0",
+    "Source": "1.0.0-*"
+  }
+}

@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{360EB3F9-E1B2-4DCD-BABF-F3E0A1738FE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{047A8474-C5A1-482C-B84D-EC02ED3BFFA2}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Cratis.Core", "Source\Cratis.Core.xproj", "{94B87F4A-E74C-41E2-87D8-21BA318919E1}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Cratis.Core.Specifications", "Specifications\Cratis.Core.Specifications.xproj", "{99FC2AD5-163C-4FA6-8439-ED5DAE33C2F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94B87F4A-E74C-41E2-87D8-21BA318919E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B87F4A-E74C-41E2-87D8-21BA318919E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B87F4A-E74C-41E2-87D8-21BA318919E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B87F4A-E74C-41E2-87D8-21BA318919E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FC2AD5-163C-4FA6-8439-ED5DAE33C2F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FC2AD5-163C-4FA6-8439-ED5DAE33C2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FC2AD5-163C-4FA6-8439-ED5DAE33C2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FC2AD5-163C-4FA6-8439-ED5DAE33C2F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94B87F4A-E74C-41E2-87D8-21BA318919E1} = {360EB3F9-E1B2-4DCD-BABF-F3E0A1738FE2}
+		{99FC2AD5-163C-4FA6-8439-ED5DAE33C2F2} = {360EB3F9-E1B2-4DCD-BABF-F3E0A1738FE2}
+	EndGlobalSection
+EndGlobal
