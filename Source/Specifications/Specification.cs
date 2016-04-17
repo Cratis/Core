@@ -3,6 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -52,13 +53,13 @@ namespace Cratis.Core.Specifications
         }
 
         /// <summary>
-        /// Evaluates the rule against each instance of an IQueryable[T]
+        /// Evaluates the rule against each instance of an IEnumerable[T]
         /// </summary>
-        /// <param name="candidates">The IQueryable[T] that will have the rule evaluated against each of its instances</param>
-        /// <returns>An IQueryable[T] containing only instances that satisfy the rule</returns>
-        public IQueryable<T> SatisfyingElementsFrom(IQueryable<T> candidates)
+        /// <param name="candidates">The IEnumerable[T] that will have the rule evaluated against each of its instances</param>
+        /// <returns>An IEnumerable[T] containing only instances that satisfy the rule</returns>
+        public IEnumerable<T> SatisfyingElementsFrom(IEnumerable<T> candidates)
         {
-            return null; // candidates.Where(_evalExpression);
+            return candidates.Where(_evalCompiled);
         }
     }
 }
