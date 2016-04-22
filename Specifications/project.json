@@ -20,6 +20,7 @@
         "Machine.Specifications.Core": "0.5.0-*",
         "Machine.Specifications.Should.Core": "0.5.0-*",
         "Machine.Specifications.Core.Runner.CLI": "0.5.0-*",
+        "moq.netcore": "4.4.0-beta8",
         "Source":"1.0.0-*"
     },
     
