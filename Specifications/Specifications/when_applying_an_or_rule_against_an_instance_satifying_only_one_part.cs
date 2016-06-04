@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
 using Machine.Specifications;
 
 namespace Cratis.Core.Specifications.Specifications

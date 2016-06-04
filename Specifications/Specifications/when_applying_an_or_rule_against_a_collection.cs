@@ -18,7 +18,6 @@ namespace Cratis.Core.Specifications.Specifications
                 the_squares = my_colored_shapes.Where(s => s.Shape == "Square").AsEnumerable();
 
                 green_or_squares = the_greens.Union(the_squares).Distinct();
-
             };
 
         Because of = () => satisfied_shapes = squares.Or(green).SatisfyingElementsFrom(my_colored_shapes);
