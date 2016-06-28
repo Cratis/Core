@@ -11,14 +11,21 @@
 			"args": ["Specifications/" ],
 			"isBuildCommand": true,
 			"showOutput": "silent",
-			"problemMatcher": "$msCompile",
+			"problemMatcher": "$msCompile"
 		},
 		{
 			"taskName": "run",
 			"args": ["-p", "Specifications" ],
 			"isBuildCommand": true,
 			"showOutput": "always",
-			"problemMatcher": "$msCompile",
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"taskName": "sample",
+			"args": ["-p", "Sample" ],
+			"isBuildCommand": true,
+			"showOutput": "always",
+			"problemMatcher": "$msCompile"
 		}
 	]
 }
