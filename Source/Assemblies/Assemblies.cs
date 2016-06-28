@@ -24,7 +24,8 @@ namespace Cratis.Core.Assemblies
         public Assemblies(IAssemblyProvider assemblyProvider)
         {
             _assemblyProvider = assemblyProvider;
-            _assemblies = assemblyProvider.GetAll();
+            _assemblies = new Assembly[0];
+               
         }
 
 #pragma warning disable 1591 // Xml Comments

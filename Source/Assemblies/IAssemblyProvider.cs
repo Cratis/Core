@@ -13,9 +13,13 @@ namespace Cratis.Core.Assemblies
     public interface IAssemblyProvider
     {
         /// <summary>
-        /// Get all the <see cref="_Assembly">assemblies</see> that can be provided
+        /// Get all available  <see cref="Assembly">assemblies</see>
         /// </summary>
-        /// <returns><see cref="IEnumerable{Assembly}">Assemblies</see> provided</returns>
-        IEnumerable<Assembly> GetAll();
+        IEnumerable<AssemblyName> GetAllByName();
+        
+        /// <summary>
+        /// Load assembly by its name
+        /// </summary>
+        Assembly Load(AssemblyName name);
     }
 }

@@ -10,13 +10,11 @@ namespace Cratis.Core.Specifications
         public static void Main(string[] args)
         {
             var ap = new AssemblyProvider();
-            var a = ap.GetAll();
+            var a = ap.GetAllByName();
             
-            foreach( var assembly in a ) Console.WriteLine($"Assembly '{assembly.FullName}'"); 
+            //foreach( var assembly in a ) Console.WriteLine($"Assembly '{assembly.FullName}'"); 
             
-            
-            
-            //AssemblyRunner.Run(typeof(Program).GetTypeInfo().Assembly);
+            AssemblyRunner.Run(typeof(Program).GetTypeInfo().Assembly);
         }
     }
 }

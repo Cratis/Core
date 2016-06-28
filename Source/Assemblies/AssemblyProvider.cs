@@ -15,18 +15,19 @@ namespace Cratis.Core.Assemblies
     public class AssemblyProvider : IAssemblyProvider
     {
 #pragma warning disable 1591 // Xml Comments        
-        public IEnumerable<Assembly> GetAll()
+        public IEnumerable<AssemblyName> GetAllByName()
         {
             var assemblies = new List<Assembly>();
             
             var entryAssembly = Assembly.GetEntryAssembly();
             var dependencyModel = DependencyContext.Load(entryAssembly);
             var assemblyNames = dependencyModel.GetRuntimeAssemblyNames(RuntimeEnvironment.GetRuntimeIdentifier());
-            foreach( var asmName in assemblyNames ) 
-            {
-                assemblies.Add(Assembly.Load(asmName));
-            }
-            return assemblies;
+            return assemblyNames;
+        }
+
+        public Assembly Load(AssemblyName name)
+        {
+            return Assembly.Load(name);
         }
 #pragma warning restore 1591 // Xml Comments        
     }
