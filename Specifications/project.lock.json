@@ -42,7 +42,36 @@
           "lib/dotnet/Castle.Core.dll": {}
         }
       },
-      "Libuv/1.9.0": {
+      "dotnet-test-mspec/0.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.0",
+          "System.Xml.XPath": "4.0.1",
+          "System.Xml.XPath.XDocument": "4.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/dotnet-test-mspec.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/dotnet-test-mspec.dll": {}
+        }
+      },
+      "FluentAssertions/4.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Reflection.TypeExtensions": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentAssertions.Core.dll": {},
+          "lib/netstandard1.3/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentAssertions.Core.dll": {},
+          "lib/netstandard1.3/FluentAssertions.dll": {}
+        }
+      },
+      "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1"
@@ -82,48 +111,36 @@
           }
         }
       },
-      "Machine.Specifications.Core/0.5.1": {
+      "Machine.Specifications/0.11.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
-          "System.Diagnostics.TextWriterTraceListener": "4.0.0-rc2-24027",
-          "System.Diagnostics.TraceSource": "4.0.0-rc2-24027"
+          "NETStandard.Library": "1.6.0",
+          "System.Diagnostics.TextWriterTraceListener": "4.0.0",
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Xml.XPath": "4.0.1",
+          "System.Xml.XPath.XDocument": "4.0.1"
         },
         "compile": {
-          "lib/netcoreapp1.0/Machine.Specifications.Core.dll": {}
+          "lib/netstandard1.3/Machine.Specifications.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp1.0/Machine.Specifications.Core.dll": {}
+          "lib/netstandard1.3/Machine.Specifications.dll": {}
         }
       },
-      "Machine.Specifications.Core.Runner.CLI/0.5.1": {
+      "Machine.Specifications.Should/0.11.0": {
         "type": "package",
         "dependencies": {
-          "Machine.Specifications.Core": "0.5.1",
-          "Machine.Specifications.Should.Core": "0.5.1",
-          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
-          "System.IO.FileSystem.Watcher": "4.0.0-rc2-24027",
-          "System.Runtime.Loader": "4.0.0-rc2-24027"
+          "Machine.Specifications": "0.11.0",
+          "NETStandard.Library": "1.6.0"
         },
         "compile": {
-          "lib/netcoreapp1.0/Machine.Specifications.Core.Runner.CLI.dll": {}
+          "lib/netstandard1.3/Machine.Specifications.Should.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp1.0/Machine.Specifications.Core.Runner.CLI.dll": {}
-        }
-      },
-      "Machine.Specifications.Should.Core/0.5.1": {
-        "type": "package",
-        "dependencies": {
-          "Machine.Specifications.Core": "0.5.1",
-          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
-          "System.Linq.Expressions": "4.0.11-rc2-24027"
-        },
-        "compile": {
-          "lib/netcoreapp1.0/Machine.Specifications.Should.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp1.0/Machine.Specifications.Should.Core.dll": {}
+          "lib/netstandard1.3/Machine.Specifications.Should.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
@@ -265,15 +282,15 @@
           "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
         }
       },
-      "Microsoft.NETCore.App/1.0.0": {
+      "Microsoft.NETCore.App/1.1.0": {
         "type": "package",
         "dependencies": {
-          "Libuv": "1.9.0",
+          "Libuv": "1.9.1",
           "Microsoft.CSharp": "4.0.1",
           "Microsoft.CodeAnalysis.CSharp": "1.3.0",
           "Microsoft.CodeAnalysis.VisualBasic": "1.3.0",
           "Microsoft.NETCore.DotNetHostPolicy": "1.0.1",
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.4",
           "Microsoft.VisualBasic": "10.0.1",
           "NETStandard.Library": "1.6.0",
           "System.Buffers": "4.0.0",
@@ -332,7 +349,7 @@
           "Microsoft.NETCore.DotNetHost": "1.0.1"
         }
       },
-      "Microsoft.NETCore.Jit/1.0.2": {
+      "Microsoft.NETCore.Jit/1.0.4": {
         "type": "package"
       },
       "Microsoft.NETCore.Platforms/1.0.1": {
@@ -344,10 +361,10 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
+      "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.2",
+          "Microsoft.NETCore.Jit": "1.0.4",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1"
         }
       },
@@ -914,15 +931,15 @@
           "lib/netstandard1.3/System.Diagnostics.StackTrace.dll": {}
         }
       },
-      "System.Diagnostics.TextWriterTraceListener/4.0.0-rc2-24027": {
+      "System.Diagnostics.TextWriterTraceListener/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.TraceSource": "4.0.0-rc2-24027",
-          "System.Globalization": "4.0.11-rc2-24027",
-          "System.IO": "4.1.0-rc2-24027",
-          "System.Resources.ResourceManager": "4.0.1-rc2-24027",
-          "System.Runtime": "4.1.0-rc2-24027",
-          "System.Threading": "4.0.11-rc2-24027"
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Threading": "4.0.11"
         },
         "compile": {
           "ref/netstandard1.3/System.Diagnostics.TextWriterTraceListener.dll": {}
@@ -1791,7 +1808,7 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Runtime.Loader.dll": {}
+          "ref/netstandard1.5/_._": {}
         },
         "runtime": {
           "lib/netstandard1.5/System.Runtime.Loader.dll": {}
@@ -2390,7 +2407,7 @@
           "System.Xml.ReaderWriter": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
@@ -2410,7 +2427,7 @@
           "System.Xml.XPath": "4.0.1"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
@@ -2421,7 +2438,7 @@
         "framework": ".NETCoreApp,Version=v1.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyModel": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0",
+          "Microsoft.NETCore.App": "1.1.0",
           "System.Linq.Expressions": "4.1.0"
         }
       }
@@ -2455,12 +2472,120 @@
         "readme.txt"
       ]
     },
-    "Libuv/1.9.0": {
-      "sha512": "UL089LEVI6EISflt+Aly72mgq51sL22bUV0OKEecb4Nj/huFsAtGHrJKjdr5oF4FKUK3V7oPYqsxmiuEIEEdKQ==",
+    "dotnet-test-mspec/0.2.0": {
+      "sha512": "AaIRSNY6ZYMRed7oDv9oxFNT/8w5b0vRCAvIN5ZiW3PgS5SOYKrJKCqSEPnz8h43tUbtICREJaqOJAhxkcfvew==",
       "type": "package",
-      "path": "Libuv/1.9.0",
+      "path": "dotnet-test-mspec/0.2.0",
       "files": [
-        "Libuv.1.9.0.nupkg.sha512",
+        "dotnet-test-mspec.0.2.0.nupkg.sha512",
+        "dotnet-test-mspec.nuspec",
+        "lib/net45/dotnet-test-mspec.exe",
+        "lib/netcoreapp1.0/dotnet-test-mspec.dll",
+        "lib/netcoreapp1.0/dotnet-test-mspec.runtimeconfig.json"
+      ]
+    },
+    "FluentAssertions/4.12.0": {
+      "sha512": "zDyZsVfWS1noMPLxHJGNhvPuJwxUIdO9wDGHbHY4C4TpTnAnL+wKdtWnZCn2Ajgmwq1fl+fEZMecTGz3ZYbYmw==",
+      "type": "package",
+      "path": "FluentAssertions/4.12.0",
+      "files": [
+        "FluentAssertions.4.12.0.nupkg.sha512",
+        "FluentAssertions.nuspec",
+        "lib/net40/FluentAssertions.Core.dll",
+        "lib/net40/FluentAssertions.Core.pdb",
+        "lib/net40/FluentAssertions.Core.xml",
+        "lib/net40/FluentAssertions.dll",
+        "lib/net40/FluentAssertions.pdb",
+        "lib/net40/FluentAssertions.xml",
+        "lib/net45/FluentAssertions.Core.dll",
+        "lib/net45/FluentAssertions.Core.pdb",
+        "lib/net45/FluentAssertions.Core.xml",
+        "lib/net45/FluentAssertions.dll",
+        "lib/net45/FluentAssertions.pdb",
+        "lib/net45/FluentAssertions.xml",
+        "lib/netstandard1.3/FluentAssertions.Core.XML",
+        "lib/netstandard1.3/FluentAssertions.Core.dll",
+        "lib/netstandard1.3/FluentAssertions.Core.pdb",
+        "lib/netstandard1.3/FluentAssertions.dll",
+        "lib/netstandard1.3/FluentAssertions.pdb",
+        "lib/netstandard1.3/FluentAssertions.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.XML",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-win81+wpa81/FluentAssertions.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.pri",
+        "lib/portable-win81+wpa81/FluentAssertions.xml",
+        "lib/sl5/FluentAssertions.Core.dll",
+        "lib/sl5/FluentAssertions.Core.pdb",
+        "lib/sl5/FluentAssertions.Core.xml",
+        "lib/sl5/FluentAssertions.dll",
+        "lib/sl5/FluentAssertions.pdb",
+        "lib/sl5/FluentAssertions.xml",
+        "lib/sl5/Microsoft.CSharp.dll",
+        "lib/sl5/Microsoft.CSharp.xml",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml",
+        "lib/sl5/System.Xml.Linq.dll",
+        "lib/sl5/System.Xml.Linq.xml",
+        "lib/sl5/de/Microsoft.CSharp.resources.dll",
+        "lib/sl5/de/System.Xml.Linq.resources.dll",
+        "lib/sl5/es/Microsoft.CSharp.resources.dll",
+        "lib/sl5/es/System.Xml.Linq.resources.dll",
+        "lib/sl5/fr/Microsoft.CSharp.resources.dll",
+        "lib/sl5/fr/System.Xml.Linq.resources.dll",
+        "lib/sl5/it/Microsoft.CSharp.resources.dll",
+        "lib/sl5/it/System.Xml.Linq.resources.dll",
+        "lib/sl5/ja/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ja/System.Xml.Linq.resources.dll",
+        "lib/sl5/ko/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ko/System.Xml.Linq.resources.dll",
+        "lib/sl5/ru/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ru/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hans/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hans/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hant/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hant/System.Xml.Linq.resources.dll",
+        "lib/uap10.0/FluentAssertions.Core.XML",
+        "lib/uap10.0/FluentAssertions.Core.dll",
+        "lib/uap10.0/FluentAssertions.Core.pdb",
+        "lib/uap10.0/FluentAssertions.dll",
+        "lib/uap10.0/FluentAssertions.pdb",
+        "lib/uap10.0/FluentAssertions.xml",
+        "lib/win81/FluentAssertions.Core.dll",
+        "lib/win81/FluentAssertions.Core.pdb",
+        "lib/win81/FluentAssertions.Core.xml",
+        "lib/win81/FluentAssertions.dll",
+        "lib/win81/FluentAssertions.pdb",
+        "lib/win81/FluentAssertions.pri",
+        "lib/win81/FluentAssertions.xml",
+        "lib/wp8/FluentAssertions.Core.dll",
+        "lib/wp8/FluentAssertions.Core.pdb",
+        "lib/wp8/FluentAssertions.Core.xml",
+        "lib/wp8/FluentAssertions.dll",
+        "lib/wp8/FluentAssertions.pdb",
+        "lib/wp8/FluentAssertions.xml",
+        "lib/wpa81/FluentAssertions.Core.dll",
+        "lib/wpa81/FluentAssertions.Core.pdb",
+        "lib/wpa81/FluentAssertions.Core.xml",
+        "lib/wpa81/FluentAssertions.dll",
+        "lib/wpa81/FluentAssertions.pdb",
+        "lib/wpa81/FluentAssertions.pri",
+        "lib/wpa81/FluentAssertions.xml"
+      ]
+    },
+    "Libuv/1.9.1": {
+      "sha512": "t7eA+ixq8pT3awYp78uY9JXmeyZ5pbbBHS4mETzxhAl81n0NZ6hc5d8Lu1sonFOWRnrOn9roPlXSEK3pod4pNw==",
+      "type": "package",
+      "path": "Libuv/1.9.1",
+      "files": [
+        "Libuv.1.9.1.nupkg.sha512",
         "Libuv.nuspec",
         "License.txt",
         "runtimes/debian-x64/native/libuv.so",
@@ -2473,32 +2598,30 @@
         "runtimes/win7-x86/native/libuv.dll"
       ]
     },
-    "Machine.Specifications.Core/0.5.1": {
-      "sha512": "BJDyxaCVCvtlazEGemEmahtBJGQyn4FQg1k+mgTOoyfxGmeACNsoK/tf18iN4qD5dfDp69ECggJr7u4RHhCBtA==",
+    "Machine.Specifications/0.11.0": {
+      "sha512": "5U7xMfGPYZRyaVdl4nrWJ3DG7OVoPofWdjnUC/vLBPgIvwfW2pKwmkee9o1MGIYbsvbaSnJjJLCcQoALu6s8Jg==",
       "type": "package",
+      "path": "Machine.Specifications/0.11.0",
       "files": [
-        "Machine.Specifications.Core.0.5.1.nupkg.sha512",
-        "Machine.Specifications.Core.nuspec",
-        "lib/netcoreapp1.0/Machine.Specifications.Core.dll"
+        "Machine.Specifications.0.11.0.nupkg.sha512",
+        "Machine.Specifications.nuspec",
+        "lib/net35/Machine.Specifications.dll",
+        "lib/net40/Machine.Specifications.dll",
+        "lib/net45/Machine.Specifications.dll",
+        "lib/netstandard1.3/Machine.Specifications.dll"
       ]
     },
-    "Machine.Specifications.Core.Runner.CLI/0.5.1": {
-      "sha512": "6xZlUubz35TJVLMAUy6IK+MjsQpTPKbuM5xaYZZq5BjaCvQOEnjfvIgUNr3ihrj9/SPgwN66Ta5EnhBN5S+cTA==",
+    "Machine.Specifications.Should/0.11.0": {
+      "sha512": "CdEOWWfsv1ApVRYab+NNEW1Mh1uxFk3zuTNqbjkZhdsTWKTnoChSQjj21f6poV3THdV2b+8i1PVwQTqi4pufSw==",
       "type": "package",
+      "path": "Machine.Specifications.Should/0.11.0",
       "files": [
-        "Machine.Specifications.Core.Runner.CLI.0.5.1.nupkg.sha512",
-        "Machine.Specifications.Core.Runner.CLI.nuspec",
-        "lib/netcoreapp1.0/Machine.Specifications.Core.Runner.CLI.dll",
-        "lib/netcoreapp1.0/Machine.Specifications.Core.Runner.CLI.runtimeconfig.json"
-      ]
-    },
-    "Machine.Specifications.Should.Core/0.5.1": {
-      "sha512": "bqgiS0IXpFctsNafCsK9lai64hBqtCyJrFWkFGIUz+uyOfF8+d+Sf4xbVB0IXUqU77cmfhUV9X/uc/X34Hdx/w==",
-      "type": "package",
-      "files": [
-        "Machine.Specifications.Should.Core.0.5.1.nupkg.sha512",
-        "Machine.Specifications.Should.Core.nuspec",
-        "lib/netcoreapp1.0/Machine.Specifications.Should.Core.dll"
+        "Machine.Specifications.Should.0.11.0.nupkg.sha512",
+        "Machine.Specifications.Should.nuspec",
+        "lib/net35/Machine.Specifications.Should.dll",
+        "lib/net40/Machine.Specifications.Should.dll",
+        "lib/net45/Machine.Specifications.Should.dll",
+        "lib/netstandard1.3/Machine.Specifications.Should.dll"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
@@ -2643,12 +2766,12 @@
         "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll"
       ]
     },
-    "Microsoft.NETCore.App/1.0.0": {
-      "sha512": "fUoZdPfrg9Xv4NBBYrinYJ4bygvbzyme1D7icGIQ5TBhIAX7aIKE3vCQHe9fGZYOGkSUyd5a0ThDunNCj9vSwA==",
+    "Microsoft.NETCore.App/1.1.0": {
+      "sha512": "YVT9H68tQD9GGqTrQWLIGmMR8xVVxVSEHh/5eyOWaVM9zN/HaZE+ljd850mZECMH2c96Rhjj5Mg/aTPq2s4hYw==",
       "type": "package",
-      "path": "Microsoft.NETCore.App/1.0.0",
+      "path": "Microsoft.NETCore.App/1.1.0",
       "files": [
-        "Microsoft.NETCore.App.1.0.0.nupkg.sha512",
+        "Microsoft.NETCore.App.1.1.0.nupkg.sha512",
         "Microsoft.NETCore.App.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -2691,15 +2814,15 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Jit/1.0.2": {
-      "sha512": "hWVs2P0M21Wf5biZGiegYsm1h2KetG1qhG9m5KsloIV+BLU00IyWJVTBQ2aMY3aprazrVqpiV3r/k8KAEVZJnA==",
+    "Microsoft.NETCore.Jit/1.0.4": {
+      "sha512": "s336ryZlopR+pQ4VfKlILX1LxiQzpCPnmiGot0p5aFPeCjwmKtHC88MI8jXdvdGPySON9i1bPUKJP8jiiPIAjA==",
       "type": "package",
-      "path": "Microsoft.NETCore.Jit/1.0.2",
+      "path": "Microsoft.NETCore.Jit/1.0.4",
       "files": [
-        "Microsoft.NETCore.Jit.1.0.2.nupkg.sha512",
-        "Microsoft.NETCore.Jit.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
+        "microsoft.netcore.jit.1.0.4.nupkg.sha512",
+        "microsoft.netcore.jit.nuspec",
         "runtime.json"
       ]
     },
@@ -2716,15 +2839,15 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-      "sha512": "uVqpWgt1/CQMWq7gjG1QJ3KEDctknx5qicu/lYN3Yo8cdLI9s6lN8+z3ARX1hEhfR1jLBEdYH4lrP9R65ERIow==",
+    "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
+      "sha512": "NTd+F7MQJi5wFh6Hq3uVH0L3om+pVcfF+bpw0hSd+Ka92QSZ4IfDJw/IWqTQ9jUtLyWYR4XR+52HD5HW+a+zoQ==",
       "type": "package",
-      "path": "Microsoft.NETCore.Runtime.CoreCLR/1.0.2",
+      "path": "Microsoft.NETCore.Runtime.CoreCLR/1.0.4",
       "files": [
-        "Microsoft.NETCore.Runtime.CoreCLR.1.0.2.nupkg.sha512",
-        "Microsoft.NETCore.Runtime.CoreCLR.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
+        "microsoft.netcore.runtime.coreclr.1.0.4.nupkg.sha512",
+        "microsoft.netcore.runtime.coreclr.nuspec",
         "runtime.json"
       ]
     },
@@ -3696,18 +3819,18 @@
         "runtimes/aot/lib/netcore50/System.Diagnostics.StackTrace.dll"
       ]
     },
-    "System.Diagnostics.TextWriterTraceListener/4.0.0-rc2-24027": {
-      "sha512": "3aweYCA6zwbH4sguC1UvVT/Xginxwg6PssJZ7SBA+HgIjXlqt0YU5pugDb1D7a1Prjrugn0n5jkjytTP2sOr7w==",
+    "System.Diagnostics.TextWriterTraceListener/4.0.0": {
+      "sha512": "w36Dr8yKy8xP150qPANe7Td+/zOI3G62ImRcHDIEW+oUXUuTKZHd4DHmqRx5+x8RXd85v3tXd1uhNTfsr+yxjA==",
       "type": "package",
+      "path": "System.Diagnostics.TextWriterTraceListener/4.0.0",
       "files": [
-        "System.Diagnostics.TextWriterTraceListener.4.0.0-rc2-24027.nupkg.sha512",
+        "System.Diagnostics.TextWriterTraceListener.4.0.0.nupkg.sha512",
         "System.Diagnostics.TextWriterTraceListener.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net46/System.Diagnostics.TextWriterTraceListener.dll",
-        "lib/netcore50/_._",
         "lib/netstandard1.3/System.Diagnostics.TextWriterTraceListener.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -7413,14 +7536,14 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Machine.Specifications.Core >= 0.5.1-*",
-      "Machine.Specifications.Core.Runner.CLI >= 0.5.1-*",
-      "Machine.Specifications.Should.Core >= 0.5.1-*",
+      "FluentAssertions >= 4.12.0",
+      "Machine.Specifications >= 0.11.0",
+      "Machine.Specifications.Should >= 0.11.0",
       "Microsoft.Extensions.DependencyModel >= 1.0.0",
-      "Microsoft.NETCore.App >= 1.0.0",
+      "Microsoft.NETCore.App >= 1.1.0",
       "Source >= 1.0.0-*",
-      "System.Diagnostics.TraceSource >= 4.0.0",
       "System.Linq.Queryable >= 4.0.1",
+      "dotnet-test-mspec",
       "moq.netcore >= 4.4.0-beta8"
     ],
     ".NETCoreApp,Version=v1.0": []
