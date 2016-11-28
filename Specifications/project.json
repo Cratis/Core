@@ -6,7 +6,7 @@
     ],
     
     "buildOptions": {
-        "emitEntryPoint": true
+        "emitEntryPoint": false
     },
     
     "dependencies": {
