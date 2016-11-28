@@ -21,8 +21,8 @@
 			"problemMatcher": "$msCompile"
 		},
 		{
-			"taskName": "sample",
-			"args": ["-p", "Sample" ],
+			"taskName": "test",
+			"args": ["./Specifications" ],
 			"isBuildCommand": true,
 			"showOutput": "always",
 			"problemMatcher": "$msCompile"
