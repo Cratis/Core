@@ -42,6 +42,20 @@
           "lib/dotnet/Castle.Core.dll": {}
         }
       },
+      "Cratis.Specifications/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "1.0.0",
+          "Microsoft.NETCore.App": "1.1.0",
+          "System.Linq.Expressions": "4.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/Cratis.Specifications.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/Cratis.Specifications.dll": {}
+        }
+      },
       "dotnet-test-mspec/0.2.0": {
         "type": "package",
         "dependencies": {
@@ -2437,6 +2451,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.0",
         "dependencies": {
+          "Cratis.Specifications": "1.0.0",
           "Microsoft.Extensions.DependencyModel": "1.0.0",
           "Microsoft.NETCore.App": "1.1.0",
           "System.Linq.Expressions": "4.1.0"
@@ -2470,6 +2485,16 @@
         "lib/sl5/Castle.Core.dll",
         "lib/sl5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "Cratis.Specifications/1.0.0": {
+      "sha512": "G+WTzN3hA8V+ehIS0Ru7LFi6OtI254PjzRhpi9+AvxIcMHd2/mr9YpxOW4N7o70SIbpDFbYN/T6rsqiixuKEdA==",
+      "type": "package",
+      "path": "Cratis.Specifications/1.0.0",
+      "files": [
+        "Cratis.Specifications.1.0.0.nupkg.sha512",
+        "Cratis.Specifications.nuspec",
+        "lib/netcoreapp1.0/Cratis.Specifications.dll"
       ]
     },
     "dotnet-test-mspec/0.2.0": {

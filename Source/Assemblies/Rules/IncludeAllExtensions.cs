@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 using Cratis.Core.Collections;
-using Cratis.Core.Specifications;
+using Cratis.Specifications;
 
 namespace Cratis.Core.Assemblies.Rules
 {

@@ -10,6 +10,7 @@
             "type": "platform",
             "version": "1.1.0"
         },
+        "Cratis.Specifications": "1.0.0-nightly001",
         "System.Linq.Expressions": "4.1.0",
         "Microsoft.Extensions.DependencyModel": "1.0.0"
     },
